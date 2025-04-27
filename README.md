@@ -21,7 +21,7 @@ Encountered a bug? Want something added? Create an [issue](https://github.com/di
 
 Have questions? Start a [discussion](https://github.com/diamond-gold/DummyItemsBlocks/discussions) ✍(◔◡◔)
 
-Starring the GitHub repository is like sprinkling stardust—help me create magic! (。・∀・)ノ
+Starring the GitHub repository is like sprinkling stardust—help me create magic.! (。・∀・)ノ
 
 Feeling generous? Buy me some [snacks](https://ko-fi.com/diamondgold)! (❤´艸｀❤)
 
