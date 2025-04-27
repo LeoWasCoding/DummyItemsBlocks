@@ -781,10 +781,6 @@ final class Main extends PluginBase
             }
         }
         // im too lazy to list all the items with compound tag data, easier to just reload ;P
-        $creativeItems = CraftingManagerFromDataHelper::loadJsonArrayOfObjectsFile(
-            BedrockDataFiles::CREATIVEITEMS_JSON,
-            ItemStackData::class
-        );
         $creativeDir = BedrockDataFiles::CREATIVE;
         $creativeItems = [];
 
