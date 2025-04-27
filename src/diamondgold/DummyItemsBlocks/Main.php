@@ -785,6 +785,23 @@ final class Main extends PluginBase
             BedrockDataFiles::CREATIVEITEMS_JSON,
             ItemStackData::class
         );
+        $creativeDir = BedrockDataFiles::CREATIVE;
+        $creativeItems = [];
+
+        foreach (scandir($creativeDir) as $file) {
+            if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+                $path = $creativeDir . '/' . $file;
+                $jsonData = json_decode(file_get_contents($path), true);
+
+                if (isset($jsonData["items"])) {
+                    foreach ($jsonData["items"] as $item) {
+                        if (isset($item["id"])) {
+                            $creativeItems[] = $item;
+                        }
+                    }
+                }
+            }
+        }
         // bare minimum code needed for non-functional item adapted from https://github.com/pmmp/PocketMine-MP/pull/5455
         // obsolete when merged
         $id = ItemTypeNames::FIREWORK_STAR;
